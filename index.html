@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DV Studios</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Resources/DV_Logo.png" />
+  </head>
+  <body>
+    <header>
+      <header>
+        <div class="logo">DV STUDIOS</div>
+        <nav>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+
+    <div class="video-container" id="hero">
+      <div class="video-slideshow">
+        <video
+          src="Resources/FROM THE ARTISTS TO THE ARTISTS_NoMargin.mp4"
+          class="welcomeVideo"
+          autoplay
+          loop
+        ></video>
+
+        <video
+          src="Resources/Zenbook_Web_edit.mp4"
+          class="welcomeVideo"
+          autoplay
+          loop
+        ></video>
+      </div>
+      <div class="arrows-overlay">
+        <button class="arrow-left" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="arrow-right" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <p>
+        Deadline stress? Leave it to us. Lighting, rendering, fixes, and
+        troubleshooting—we take care of the technical stuff so you can focus on
+        your vision.
+      </p>
+
+      <button class="button" id="seeMore-btn">See More</button>
+
+      <div class="quotation" id="quotation">
+        <h2>General Quotation</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Package</th>
+              <th>Suitable For</th>
+              <th>3D Modeling</th>
+              <th>Animation</th>
+              <th>VFX</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Starter</td>
+              <td>Indie creators, short clips, simple assets</td>
+              <td>$200 – $500</td>
+              <td>$300 – $600</td>
+              <td>$400 – $700</td>
+              <td class="notes">Basic detail, up to 10 sec, simple effects</td>
+            </tr>
+            <tr>
+              <td>Professional</td>
+              <td>Studios, ads, marketing videos, game assets</td>
+              <td>$600 – $1,200</td>
+              <td>$800 – $1,500</td>
+              <td>$1,000 – $2,000</td>
+              <td class="notes">
+                Mid-level detail, up to 1 min animation, layered VFX
+              </td>
+            </tr>
+            <tr>
+              <td>Studio</td>
+              <td>High-end productions, cinematic scenes</td>
+              <td>$1,500+</td>
+              <td>$2,000+</td>
+              <td>$3,000+</td>
+              <td class="notes">
+                Advanced detail, long-form, film-quality VFX
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <div class="footnotes">
+          <p>
+            💡 Commission projects: Priced by deliverables (client owns rights).
+          </p>
+          <p>
+            🤝 Collaboration projects: Flexible terms (reduced cost, revenue
+            share, or credit).
+          </p>
+          <p>
+            📌 Final quote depends on complexity, duration, rendering, and
+            revisions.
+          </p>
+        </div>
+        <div class="request-btn">
+          <a href="mailto:dv.motiongraphics@gmail.com">
+            <button class="button">Request a Custom Quote</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-container" id="portfolio">
+      <h2 class="project-header">FEATURED PROJECTS</h2>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="iframe-wrapper">
+            <iframe
+              width="100%"
+              height="300"
+              src="https://www.youtube.com/embed/PeWQjcL1w3A?si=e1a_3ueqiPtUiBzc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <!--             <div class="overlay"><span>ShowReel</span></div>
+ -->
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="iframe-wrapper">
+            <iframe
+              width="100%"
+              height="300"
+              src="https://www.youtube.com/embed/DYHL3ZTT7OI"
+              title="ShowReel"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+
+            <!--             <div class="overlay"><span>ShowReel</span></div>
+ -->
+          </div>
+        </div>
+
+        <div class="portfolio-item">
+          <div class="iframe-wrapper">
+            <iframe
+              width="100%"
+              height="300"
+              src="https://www.youtube.com/embed/f4QY4B4ZnU4?si=QD-veaAZXzQK7Pa8"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <!--             <div class="overlay"><span>ShowReel</span></div>
+ -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p
+        style="
+          max-width: 800px;
+          margin: 0 auto;
+          text-align: center;
+          color: #ccc;
+        "
+      >
+        At Designverse Studios, we help artists bring their visions to life.
+        From lighting and rendering to scene setup, model fixes, and
+        troubleshooting, our team collaborates closely with creators to overcome
+        technical challenges and meet deadlines—so the focus stays on
+        creativity.
+      </p>
+      <br />
+      <div class="gallery-container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="Resources/interior.jpg"
+              alt="interior-image"
+              width="350px"
+            />
+            <div class="gallery-overlay">
+              <h3>Interior Render</h3>
+              <p>
+                A cozy living room showcasing realistic lighting and textures.
+              </p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img
+              src="Resources/product.jpg"
+              alt="interior-image"
+              width="350px"
+            />
+            <div class="gallery-overlay">
+              <h3>Product Render</h3>
+              <p>Headphones with neat design and soft surfaces.</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="Resources/Ai.jpeg" alt="interior-image" width="350px" />
+            <div class="gallery-overlay">
+              <h3>Ai Powered</h3>
+              <p>
+                Ai powered rendering process with maximum speed and high
+                quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p style="text-align: center; color: #ccc">
+        Have a project in mind? Let’s talk! Reach us at
+        <a
+          href="mailto:dv.motiongraphics@gmail.com"
+          style="color: var(--primary); text-decoration: none"
+          >dv.motoiongraphics@gmail.com</a
+        >
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2025 Designverse Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
