@@ -268,12 +268,14 @@ button:active {
 .portfolio-grid {
   margin: 0px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 
   gap: 20px;
 }
 
 .portfolio-item {
+  margin: auto;
   padding: 5px;
   display: flex;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.9);
@@ -284,6 +286,11 @@ button:active {
   transition: transform 0.4s ease;
 }
 
+@media (max-width: 600px) {
+  .portfolio-grid {
+    flex-direction: column;
+  }
+}
 .portfolio-item:hover {
   transform: translateY(-10px);
 }
