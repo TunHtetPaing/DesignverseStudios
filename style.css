@@ -262,13 +262,13 @@ button:active {
 .projects-container {
   color: var(--accent);
   text-align: center;
-  margin: 50px;
+  margin: 10px;
 }
 
 .portfolio-grid {
-  margin: 30px;
+  margin: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   gap: 20px;
 }
