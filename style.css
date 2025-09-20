@@ -181,6 +181,7 @@ tr {
 
 #quotation {
   text-align: center;
+  min-width: 800px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out;
@@ -190,6 +191,15 @@ tr {
 #quotation.show {
   max-height: 2000px; /* large enough to fit the table */
   padding: 20px 0;
+  overflow-x: scroll;
+}
+.quotation_Table {
+  width: 100%; /* Full container width */
+  display: block; /* Crucial: lets overflow work */
+}
+
+.quotation_Table table {
+  min-width: 800px; /* Prevent table from shrinking too small */
 }
 
 @keyframes slide {
