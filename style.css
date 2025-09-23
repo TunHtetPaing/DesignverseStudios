@@ -31,7 +31,6 @@ header {
   top: 0;
   left: 0;
   background: rgba(15, 15, 23, 1);
-  /* backdrop-filter: blur(10px); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +72,7 @@ nav ul li a:hover {
   width: 100%;
   margin: 0px auto;
   margin-top: 0px;
-  overflow: hidden; /* hide the extra videos */
+  overflow: hidden;
 }
 
 .video-slideshow {
@@ -83,7 +82,7 @@ nav ul li a:hover {
 }
 
 .welcomeVideo {
-  min-width: 100%; /* each video takes full container width */
+  min-width: 100%;
   height: auto;
 }
 
@@ -126,50 +125,38 @@ nav ul li a:hover {
   background-color: var(--accent);
 }
 
-/* .arrow-left {
-  border: none;
-  background-color: #ffffff7a;
-  position: relative;
-  bottom: 400px;
-  right: 39%;
+/* Table Styling */
+.quotation_Table {
+  display: block;
+  width: 80%;
+  margin: auto;
+  overflow-x: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+  margin-bottom: 20px;
 }
 
-.arrow-right {
-  border: none;
-  background-color: #ffffff7a;
-  position: relative;
-  bottom: 400px;
-  left: 39%;
-} */
-
-table {
-  text-align: center;
-  background-color: #272727;
+.quotation_Table table {
+  min-width: 800px;
   width: 100%;
-  max-width: 800px;
-  margin: 0px auto;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
 }
 
-th,
-td {
+.quotation_Table th,
+.quotation_Table td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 12px 8px;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-th {
+.quotation_Table th {
   background-color: #333;
   color: white;
 }
 
-tr {
-  text-align: center;
-}
-
 .notes {
-  font-size: 12px;
+  font-size: 0.8rem;
   color: #555;
 }
 
@@ -177,6 +164,25 @@ tr {
   font-size: 0.9rem;
   color: #555;
   margin-top: 10px;
+}
+
+/* Smooth Scrollbar */
+.quotation_Table::-webkit-scrollbar {
+  height: 6px;
+}
+
+.quotation_Table::-webkit-scrollbar-track {
+  background: #222;
+  border-radius: 10px;
+}
+
+.quotation_Table::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.quotation_Table::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
 }
 
 #quotation {
@@ -189,19 +195,11 @@ tr {
 }
 
 #quotation.show {
-  max-height: 2000px; /* large enough to fit the table */
+  max-height: 2000px;
   padding: 20px 0;
-  overflow-x: scroll;
-}
-.quotation_Table {
-  width: 100%; /* Full container width */
-  display: block; /* Crucial: lets overflow work */
 }
 
-.quotation_Table table {
-  min-width: 800px; /* Prevent table from shrinking too small */
-}
-
+/* Animations */
 @keyframes slide {
   0% {
     left: 0%;
@@ -211,34 +209,46 @@ tr {
   }
 }
 
-/* arrows */
-
-/* For screens smaller than 1200px */
+/* Responsive Tweaks */
 @media (max-width: 1200px) {
   .welcomeVideo {
     margin-top: 2%;
   }
 }
 
-/* For screens smaller than 768px (tablets & small screens) */
 @media (max-width: 900px) {
   .welcomeVideo {
     margin-top: 5%;
   }
+  .quotation_Table table {
+    min-width: 600px;
+  }
 }
+
 @media (max-width: 600px) {
   .welcomeVideo {
     margin-top: 8%;
   }
+  .quotation_Table table {
+    min-width: 500px;
+  }
 }
 
-/* For mobile screens smaller than 480px */
 @media (max-width: 480px) {
   .welcomeVideo {
     margin-top: 10%;
   }
+  .quotation_Table table {
+    min-width: 400px;
+  }
+  .quotation_Table th,
+  .quotation_Table td {
+    font-size: 0.75rem;
+    padding: 8px 4px;
+  }
 }
 
+/* General Styling */
 p {
   font-size: 1rem;
   margin-top: 1rem;
@@ -280,7 +290,6 @@ button:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   gap: 20px;
 }
 
@@ -290,19 +299,19 @@ button:active {
   display: flex;
   box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.9);
   background: var(--secondary);
-  /* border-radius: 15px; */
   overflow: hidden;
   position: relative;
   transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
 }
 
 @media (max-width: 600px) {
   .portfolio-grid {
     flex-direction: column;
   }
-}
-.portfolio-item:hover {
-  transform: translateY(-10px);
 }
 
 .gallery-container {
@@ -313,8 +322,6 @@ button:active {
 
 .gallery-grid {
   display: grid;
-  /*   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
- */
   grid-template-columns: 1fr;
   gap: 40px;
 }
