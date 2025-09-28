@@ -155,6 +155,11 @@ nav ul li a:hover {
   color: white;
 }
 
+.table_container {
+  display: block;
+  overflow-x: scroll;
+}
+
 .notes {
   font-size: 0.8rem;
   color: #555;
@@ -220,17 +225,11 @@ nav ul li a:hover {
   .welcomeVideo {
     margin-top: 5%;
   }
-  .quotation_Table table {
-    min-width: 600px;
-  }
 }
 
 @media (max-width: 600px) {
   .welcomeVideo {
     margin-top: 8%;
-  }
-  .quotation_Table table {
-    min-width: 500px;
   }
 }
 
