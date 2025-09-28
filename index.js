@@ -70,3 +70,12 @@ function toggleQuotation() {
 document
   .getElementById("seeMore-btn")
   .addEventListener("click", toggleQuotation);
+
+// Grab the toggle button and nav menu
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+// Toggle the 'active' class on click
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
