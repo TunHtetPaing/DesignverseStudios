@@ -162,13 +162,9 @@ nav ul li a:hover {
   transition: background 0.3s;
 }
 
-.arrows-overlay button:hover {
+/* .arrows-overlay button:hover {
   background-color: var(--accent);
-}
-
-.arrows-overlay button:active {
-  background-color: var(--accent);
-}
+} */
 
 /* Table Styling */
 .quotation_Table {
