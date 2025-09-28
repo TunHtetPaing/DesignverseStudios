@@ -166,6 +166,10 @@ nav ul li a:hover {
   background-color: var(--accent);
 }
 
+.arrows-overlay button:active {
+  background-color: var(--accent);
+}
+
 /* Table Styling */
 .quotation_Table {
   display: block;
